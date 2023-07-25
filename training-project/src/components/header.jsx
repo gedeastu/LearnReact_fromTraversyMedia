@@ -49,7 +49,7 @@ const Header = (props) => {
         <img src={cardio} alt="" className='absolute left-0 bottom-0 w-72 sm:w-max'/>
         </div>
         <div id='part2' className='bg-[#F9F9F9] h-screen relative max-w-full group'>
-        <div className='flex flex-col py-32 text-[#32495E] items-start h-full gap-10 px-5 md:px-28'>
+        <div className='flex flex-col py-32 text-[#32495E] items-start h-full gap-10 px-5 md:px-28 md:justify-center'>
         <div className='text-[#32495E] font-TThoves font-bold text-left text-4xl md:text-5xl'>
         <h1  className=''>Trauma-Rehabilitation
         <br />
@@ -74,7 +74,7 @@ const Header = (props) => {
         </button>
         </div>
         <img src={rehab} alt="" className='absolute right-0 bottom-0 w-72 sm:w-max'/>
-        <div className='flex flex-row-reverse items-center bottom-0 right-0 absolute z-50'>
+        <div className='flex flex-row-reverse items-center bottom-0 right-0 absolute z-30'>
         <input type="checkbox" id='sosmed' className='peer hidden'/>
         <label htmlFor='sosmed' className='bg-[#E95258] p-3 border border-white z-50 rounded-full duration-200 peer-checked:rotate-90 peer-checked:transition-all'>
         <svg className='' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -19,7 +19,7 @@ const Navbar = () => {
      <input id='drawerBtn' type="checkbox" checked={iconSwap} onChange={handleChange} className='peer hidden checked:transition-all duration-200'/>
      <label htmlFor='drawerBtn' className='relative z-50 pr-5 py-3 flex flex-col md:hidden'>
      {iconSwap ? 
-     (<svg xmlns="http://www.w3.org/2000/svg" className='fill-[#E95258]' height="48" viewBox="0 -960 960 960" width="48"><path d="m283-345-43-43 240-240 240 239-43 43-197-197-197 198Z"/></svg>) : (<svg xmlns="http://www.w3.org/2000/svg" className='fill-white' height="48" viewBox="0 -960 960 960" width="48"><path d="M120-240v-60h240v60H120Zm0-210v-60h480v60H120Zm0-210v-60h720v60H120Z"/></svg>)
+     (<svg xmlns="http://www.w3.org/2000/svg" className='fill-[#E95258] fixed right-7' height="48" viewBox="0 -960 960 960" width="48"><path d="m283-345-43-43 240-240 240 239-43 43-197-197-197 198Z"/></svg>) : (<svg xmlns="http://www.w3.org/2000/svg" className='fill-white' height="48" viewBox="0 -960 960 960" width="48"><path d="M120-240v-60h240v60H120Zm0-210v-60h480v60H120Zm0-210v-60h720v60H120Z"/></svg>)
      }
      </label>
      <div className='w-full h-96 bg-white fixed rounded-bl-3xl rounded-br-3xl -top-96 duration-500 peer:transition-all peer-checked:top-0 peer-checked:z-40 peer-checked:shadow-2xl'></div>
