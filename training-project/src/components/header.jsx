@@ -24,7 +24,7 @@ const Header = (props) => {
   ]
   return(
    <>
-   <header className='grid grid-cols-1 md:grid-cols-2'>
+   <header className='grid relative grid-cols-1 md:grid-cols-2'>
         <div id='part1' className='bg-[#E95258] h-screen relative max-w-full group'>
         <div className='flex flex-col justify-center items-end h-full gap-10 px-5 md:px-28'>
         <div className='text-white font-TThoves font-bold text-right text-4xl md:text-5xl'>
@@ -74,9 +74,9 @@ const Header = (props) => {
         </button>
         </div>
         <img src={rehab} alt="" className='absolute right-0 bottom-0 w-72 sm:w-max'/>
-        <div className='flex flex-row-reverse items-center bottom-0 right-0 absolute z-30'>
+        <div className='flex flex-row items-center bottom-5 left-5 absolute z-40'>
         <input type="checkbox" id='sosmed' className='peer hidden'/>
-        <label htmlFor='sosmed' className='bg-[#E95258] p-3 border border-white z-50 rounded-full duration-200 peer-checked:rotate-90 peer-checked:transition-all'>
+        <label htmlFor='sosmed' className='bg-[#E95258] p-3 border border-white rounded-full duration-200 peer-checked:rotate-90 peer-checked:transition-all'>
         <svg className='' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="6" cy="12" r="2" fill="white"/>
         <circle cx="12" cy="12" r="2" fill="white"/>
