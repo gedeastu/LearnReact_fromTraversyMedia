@@ -8,7 +8,9 @@ const Homepage = () => {
     <div className='w-screen h-screen relative'>
     <Navbar/>
     <Header/>
+    <main>
     <OurServices/>
+    </main>
     </div>
     </>
   )
