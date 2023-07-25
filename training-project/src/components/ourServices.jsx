@@ -28,7 +28,7 @@ const OurServices = () => {
       </svg>
       </div>
       </Link>
-      <article className='px-32 py-20 font-TThoves'>
+      <article className='p-10 font-TThoves md:px-32 md:py-20'>
       <h1 id='title' name="title" className='text-white font-semibold text-5xl'>
         Our Services
       </h1>
