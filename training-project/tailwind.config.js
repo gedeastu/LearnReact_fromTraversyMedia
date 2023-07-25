@@ -9,7 +9,8 @@ export default {
       outfit : ['Outfit','sans'],
       raleway : ['Raleway','sans'],
       plusJakartaSans : ['Plus Jakarta Sans','sans'],
-      poppins : ['Poppins','sans']
+      poppins : ['Poppins','sans'],
+      TThoves : ['TT Hoves Pro Trial Variable','sans']
     },
     screens: {
       'sm': '640px',
@@ -20,5 +21,7 @@ export default {
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('daisyui')
+  ],
 }
