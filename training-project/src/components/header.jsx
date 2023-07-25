@@ -1,27 +1,30 @@
 import React from 'react'
 import './header.css'
+import { useState } from 'react'
 import cardio from '../assets/kardio.png'
 import rehab from '../assets/rehab.png'
 import PropTypes from 'prop-types';
 const Header = (props) => {
-  const nameService = [
-    {
-        id: 1,
-        name: 'Aubrey Drake Graham'
-    },
-    {
-        id: 2,
-        name: 'Abel Makkonen Tesfaye'
-    },
-    {
-        id: 3,
-        name: 'Kendrick Lamar Duckworth'
-    },
-    {
-        id: 4,
-        name: 'Brian Imanuel Soewarno'
-    },
-  ]
+  const [nameService, setNameService] = useState(
+    [
+        {
+            id: 1,
+            name: 'Aubrey Drake Graham'
+        },
+        {
+            id: 2,
+            name: 'Abel Makkonen Tesfaye'
+        },
+        {
+            id: 3,
+            name: 'Kendrick Lamar Duckworth'
+        },
+        {
+            id: 4,
+            name: 'Brian Imanuel Soewarno'
+        },
+    ]
+  )
   return(
    <>
    <header className='grid relative grid-cols-1 md:grid-cols-2'>
