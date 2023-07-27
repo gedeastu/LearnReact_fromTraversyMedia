@@ -56,7 +56,7 @@ const Header = (props) => {
         <div className='text-[#32495E] font-TThoves font-bold text-left text-4xl md:text-5xl'>
         <h1  className=''>Trauma-Rehabilitation
         <br />
-        center</h1>
+        Center</h1>
         </div>
         <div className='w-80 text-[#32495E] font-TThoves font-medium text-left'><p className=''>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the</p></div>
         <ul className='flex flex-col gap-3'>

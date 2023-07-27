@@ -1,25 +1,13 @@
 import React from 'react'
-import './navbar.css'
+import './ourServices.css'
 import { useState,useRef } from 'react';
+import cardioImage from '../assets/cardioimage.jpg'
 import { Link, animateScroll as scroll } from 'react-scroll';
+import DataOurServices from '../data/dataOurServices';
 const OurServices = () => {
-  // const scrollBehaviour = useRef(null);
-  // const scrollToTarget = (ref) =>  {
-  //   scrollBehaviour.current.scrollIntoView(
-  //     {
-  //       top: ref.offsetTop,
-  //       left: 0,
-  //       behaviour : 'smooth'
-  //     }
-  //   )
-  // }
-  // const [bounceAnimated, setBounceAnimated] = useState(false)
-  // const handleOnChange = () => {
-  //   setBounceAnimated(!bounceAnimated)
-  // }
   return(
     <>
-    <div className='w-full h-screen bg-[#32495E]'>
+    <div className='w-full h-[125rem] bg-[#32495E] md:h-screen'>
       <Link to="title" smooth={true} duration={600} className='mx-auto justify-center relative hidden md:flex'>
       <div className='bg-[#F2C94C] animate-bounce p-3 flex -top-7 justify-center items-center absolute w-14 h-14 rounded-full'>
       <svg width="28" height="38" viewBox="0 0 28 38" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -28,10 +16,25 @@ const OurServices = () => {
       </svg>
       </div>
       </Link>
-      <article className='p-7 font-TThoves md:px-32 md:py-20'>
-      <h1 id='title' name="title" className='text-white font-semibold text-5xl'>
+      <article className='font-TThoves h-full py-10 gap-10 flex flex-col items-start md:px-14 md:py-20 md:gap-12'>
+      <h1 id='title' name="title" className='text-white font-semibold text-5xl text-left'>
         Our Services
       </h1>
+      <div className='w-full flex flex-col items-center gap-40 md:flex-row md:gap-0 md:h-max md:justify-between'>
+      {DataOurServices.map((data)=>(
+          <div key={data.id} className='group text-white relative w-max flex flex-col items-center'>
+          <div id='bgImage' className="h-72 w-96 flex flex-col bg-center bg-cover justify-center items-center transition-all ease-in-out before:opacity-0 group-hover:before:transition-all group-hover:before:duration-300 group-hover:before:w-full group-hover:before:h-full group-hover:before:bg-[#32495E] group-hover:before:opacity-40">
+          <svg className='h-16 transition-all top-20 ease-in-out absolute opacity-0 group-hover:opacity-100' dangerouslySetInnerHTML={{__html: data.icon}}></svg>
+          </div>
+          <div id="desc" className='w-96 h-48 absolute translate-y-[17rem]'>
+          <div className="w-full h-full flex flex-col items-center justify-center bottom-0 transition-all group-hover:-translate-y-10 group-hover:bg-[#E95258]">
+          <h1 className='font-bold text-2xl text-left pb-3'>{data.services}</h1>
+          <p className='w-[20rem] text-left text-md text-transparent transition-all group-hover:text-white group-hover:ease-in-out'>{data.desc}</p>
+          </div>
+          </div>
+          </div>
+      ))}
+      </div>
       </article>
     </div>
     </>
