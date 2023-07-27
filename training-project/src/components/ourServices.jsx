@@ -7,7 +7,7 @@ import DataOurServices from '../data/dataOurServices';
 const OurServices = () => {
   return(
     <>
-    <div className='w-full h-[125rem] bg-[#32495E] md:h-screen'>
+    <div className='w-full h-[125rem] bg-[#32495E] md:h-[50rem]'>
       <Link to="title" smooth={true} duration={600} className='mx-auto justify-center relative hidden md:flex'>
       <div className='bg-[#F2C94C] animate-bounce p-3 flex -top-7 justify-center items-center absolute w-14 h-14 rounded-full'>
       <svg width="28" height="38" viewBox="0 0 28 38" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -16,10 +16,13 @@ const OurServices = () => {
       </svg>
       </div>
       </Link>
-      <article className='font-TThoves h-full py-10 gap-10 flex flex-col items-start md:px-14 md:py-20 md:gap-12'>
+      <article className='font-TThoves w-full h-full py-10 gap-10 flex flex-col items-start md:px-14 md:py-20 md:gap-14'>
+      <div className='flex flex-row w-full justify-between items-center'>
       <h1 id='title' name="title" className='text-white font-semibold text-5xl text-left'>
         Our Services
       </h1>
+      <button className='text-white font-TThoves border border-white rounded-full py-3 px-7 font-medium'>All Services</button>
+      </div>
       <div className='w-full flex flex-col items-center gap-40 md:flex-row md:gap-0 md:h-max md:justify-between'>
       {DataOurServices.map((data)=>(
           <div key={data.id} className='group text-white relative w-max flex flex-col items-center'>
