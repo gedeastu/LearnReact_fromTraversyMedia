@@ -9,10 +9,8 @@ const Homepage = () => {
     <div className='w-screen h-screen relative'>
     <Navbar/>
     <Header/>
-    <main className='flex flex-col h-screen'>
     <OurServices/>
     <OurSpecialist/>
-    </main>
     </div>
     </>
   )
