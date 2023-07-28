@@ -7,7 +7,7 @@ import DataOurServices from '../data/dataOurServices';
 const OurServices = () => {
   return(
     <>
-    <div className='w-full h-[200rem] bg-[#32495E] flex flex-col justify-center md:h-screen'>
+    <div className='w-full h-[150rem] bg-[#32495E] md:h-screen'>
       <Link to="title" smooth={true} duration={600} className='mx-auto justify-center relative hidden md:flex'>
       <div className='bg-[#F2C94C] animate-bounce p-3 flex -top-7 justify-center items-center absolute w-14 h-14 rounded-full'>
       <svg width="28" height="38" viewBox="0 0 28 38" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -16,7 +16,7 @@ const OurServices = () => {
       </svg>
       </div>
       </Link>
-      <article className='font-TThoves w-full h-screen px-7 py-10 gap-10 flex flex-col items-start md:px-14 md:py-24 md:gap-14'>
+      <article className='font-TThoves w-full h-screen px-7 py-20 gap-10 flex flex-col items-start justify-center md:px-14 md:py-28 md:gap-14'>
       <h1 id='title' name="title" className='text-white font-semibold text-5xl text-left'>
         Our Services
       </h1>
